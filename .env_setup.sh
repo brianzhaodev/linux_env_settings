@@ -10,6 +10,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 curl https://raw.githubusercontent.com/brianzhaodev/linux_env_settings/main/.p10k.zsh > .p10k.zsh
 curl https://raw.githubusercontent.com/brianzhaodev/linux_env_settings/main/.zshrc > .zshrc
+curl https://raw.githubusercontent.com/brianzhaodev/linux_env_settings/main/.tmux.conf > .tmux.conf
 
 chsh -s $(which zsh)
 
