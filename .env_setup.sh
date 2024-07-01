@@ -11,6 +11,6 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 curl https://raw.githubusercontent.com/brianzhaodev/linux_env_settings/main/.p10k.zsh > .p10k.zsh
-curl https://raw.githubusercontent.com/brianzhaodev/linux_env_settings/main/.zshrc.zsh > .zshrc
+curl https://raw.githubusercontent.com/brianzhaodev/linux_env_settings/main/.zshrc > .zshrc
 
 exec zsh -l
