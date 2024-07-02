@@ -1,6 +1,6 @@
 [ ! -f /bin/zsh ] && sudo apt install -y zsh
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+[ ! -d './.oh-my-zsh' ] && sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 git clone https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
 
@@ -13,6 +13,6 @@ curl https://raw.githubusercontent.com/brianzhaodev/linux_env_settings/main/.zsh
 curl https://raw.githubusercontent.com/brianzhaodev/linux_env_settings/main/.tmux.conf > .tmux.conf
 curl https://raw.githubusercontent.com/brianzhaodev/linux_env_settings/main/.vimrc > .vimrc
 
-chsh -s $(which zsh)
+[ $SHELL != "/usr/bin/zsh" ] && chsh -s $(which zsh)
 
 exec zsh -l
